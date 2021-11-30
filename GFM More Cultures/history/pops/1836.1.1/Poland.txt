@@ -1178,7 +1178,13 @@
     serfs = {
         culture = polish
         religion = catholic
-        size = 9150
+        size = 8250
+    }
+
+    serfs = {
+        culture = vilamovian
+        religion = catholic
+        size = 900
     }
 
     farmers = {
@@ -2630,13 +2636,13 @@
     farmers = {
         culture = polish
         religion = catholic
-        size = 6000
+        size = 2000
     }
 
     farmers = {
         culture = goral
         religion = catholic
-        size = 44000
+        size = 48000
     }
 
     serfs = {
@@ -2648,7 +2654,13 @@
     serfs = {
         culture = polish
         religion = catholic
-        size = 50000
+        size = 32000
+    }
+	
+	serfs = {
+        culture = goral
+        religion = catholic
+        size = 18000
     }
 
     clergymen = {
@@ -2672,7 +2684,13 @@
     farmers = {
         culture = ukrainian
         religion = orthodox
-        size = 19200
+        size = 7200
+    }
+	
+	farmers = {
+        culture = lemko
+        religion = orthodox
+        size = 12000
     }
 
     aristocrats = {
@@ -3147,7 +3165,13 @@
     serfs = {
         culture = ukrainian
         religion = orthodox
-        size = 17700
+        size = 700
+    }
+	
+	farmers = {
+        culture = lemko
+        religion = orthodox
+        size = 17000
     }
 
     aristocrats = {
@@ -3195,7 +3219,13 @@
     serfs = {
         culture = ukrainian
         religion = orthodox
-        size = 43000
+        size = 40500
+    }
+	
+	farmers = {
+        culture = boyko
+        religion = orthodox
+        size = 2500
     }
 
     clergymen = {
@@ -4028,7 +4058,7 @@
     }
 
     farmers = {
-        culture = tatar
+        culture = lipka
         religion = sunni
         size = 3400
     }
@@ -4157,7 +4187,7 @@
     }
 
     farmers = {
-        culture = tatar
+        culture = lipka
         religion = sunni
         size = 340
     }

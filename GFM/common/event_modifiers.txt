@@ -29,6 +29,23 @@ economic_malaise = {
 
 }
 
+resistance_to_new_regime = { 
+	global_pop_militancy_modifier = 0.01
+	global_pop_consciousness_modifier = 0.01
+	rgo_output = 0.2
+	cb_generation_speed_modifier = -0.3
+	icon = 4
+}
+
+bushiguntai_enacted = { 
+	org_regain = -0.1
+    land_organisation = 0.1
+    land_unit_start_experience = 5
+    supply_consumption = -0.05
+    mobilisation_size = -0.2
+    icon = 15
+}
+
 transisthmian_trade = {
     local_RGO_output = 0.8
     local_RGO_throughput = 0.8
@@ -1695,7 +1712,7 @@ congo_company = {
 
 congo_exploitation = {
     immigrant_push = -1
-    population_growth = -0.01
+    population_growth = -0.001
     farm_rgo_eff = 0.2
     farm_rgo_size = 1
     mine_rgo_eff = 0.2
@@ -1984,6 +2001,13 @@ the_eiffel_tower = {
 rhine_crisis = {
     badboy = 0.01
     icon = 6
+}
+
+rheinbegradigt = {
+	local_factory_throughput = 0.5
+	local_RGO_throughput = 0.5
+	local_ruling_party_support = 0.2
+    icon = 15
 }
 
 puppet_rhineland = {
@@ -2357,7 +2381,17 @@ opened_port = {
 	pop_consciousness_modifier = 0.02
 	local_rgo_output = 0.2 
 	icon = 6
+}
+ 
+dentoudou = { 
+	prestige = 0.03 
+	global_pop_consciousness_modifier = -0.05
+	cb_generation_speed_modifier = -0.8
+	political_reform_desire = -0.2
+	social_reform_desire = -0.2
+	icon = 5
 } 
+
 
 kobu_gattai = {
     prestige = -0.01
@@ -2396,6 +2430,10 @@ no_line_of_advantage = {
     cb_generation_speed_modifier = -0.2
     rgo_output = 0.05
     icon = 15
+}
+
+aggression_against_russia = { 
+	icon = 15 
 }
 
 daimyo_draft = {

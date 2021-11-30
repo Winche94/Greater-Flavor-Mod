@@ -20,6 +20,38 @@ germanic = {
         "von Sachsen-Weimar-Eisenach" "von Schlieffen" "von Schwarzburg" "von Spee" "von Tirpitz" "von Waldeck und Pyrmont" "von Wettin"
         "von Wrangel" "von Zieten" "zur Lippe" "von Roon" }
     }
+    pennsylvania_dutch = {
+        color = { 62 99 84 }
+        first_names = { Adelbert Adolf Albrecht Alexander Alfred August Bernhard Burkhard Dieter
+        Eduard Edwin Erwin Erich Ernst Florian Franz Friedrich Fritz Georg Günther
+        Gustav Hasso Heinrich Helmuth Hermann Hugo Joachim Johann Jürgen Karl
+        Konrad Leonhard Leopold Ludwig Lukas Manfred Maximilian Michael Nikolaus Otto
+        Pascal Paul Peter Reinhard Rudolf Ruprecht Stefan Theodor Wilhelm Wolfgang }
+
+        last_names = { Behncke Brommy Cordemann Dreyer Droste Groener "Herwarth von Bittenfeld" Heppendorf Hoffmann Krohn Ludendorff Schree
+        "Vogel von Falkenstein" "von Alten" "von Anhalt" "von Arentschildt" "von Bismarck-Bohlen" "von Blumenthal" "von Blomberg"         "von Boyen" "von Braunschweig" "von Bülow" "von dem Knesebeck" "von Gebser" "von Fritsch" "von Halkett" "von Hannover"
+        "von Hessen-Darmstadt" "von Hessen-Kassel" "von Hindenburg" "von Hohenzollern" "von Holstein-Gottorp" "von Knorr" "von Kleefeld"
+        "von Manteuffel" "von Mecklenburg-Schwerin" "von Mecklenburg-Strelitz" "von Moltke" "von Oldenburg" "von Rauch" "von Ravensberg"
+        "von Reuter" "von Richthofen" "von Sachsen-Altenburg" "von Sachsen-Coburg-Gotha" "von Sachsen-Meiningen"
+        "von Sachsen-Weimar-Eisenach" "von Schlieffen" "von Schwarzburg" "von Spee" "von Tirpitz" "von Waldeck und Pyrmont" "von Wettin"
+        "von Wrangel" "von Zieten" "zur Lippe" "von Roon" }
+    }
+	hunsrik = {
+        color = { 110 80 80 }
+        first_names = { Adelbert Adolf Albrecht Alexander Alfred August Bernhard Burkhard Dieter
+        Eduard Edwin Erwin Erich Ernst Florian Franz Friedrich Fritz Georg Günther
+        Gustav Hasso Heinrich Helmuth Hermann Hugo Joachim Johann Jürgen Karl
+        Konrad Leonhard Leopold Ludwig Lukas Manfred Maximilian Michael Nikolaus Otto
+        Pascal Paul Peter Reinhard Rudolf Ruprecht Stefan Theodor Wilhelm Wolfgang }
+
+        last_names = { Behncke Brommy Cordemann Dreyer Droste Groener "Herwarth von Bittenfeld" Heppendorf Hoffmann Krohn Ludendorff Schree
+        "Vogel von Falkenstein" "von Alten" "von Anhalt" "von Arentschildt" "von Bismarck-Bohlen" "von Blumenthal" "von Blomberg"         "von Boyen" "von Braunschweig" "von Bülow" "von dem Knesebeck" "von Gebser" "von Fritsch" "von Halkett" "von Hannover"
+        "von Hessen-Darmstadt" "von Hessen-Kassel" "von Hindenburg" "von Hohenzollern" "von Holstein-Gottorp" "von Knorr" "von Kleefeld"
+        "von Manteuffel" "von Mecklenburg-Schwerin" "von Mecklenburg-Strelitz" "von Moltke" "von Oldenburg" "von Rauch" "von Ravensberg"
+        "von Reuter" "von Richthofen" "von Sachsen-Altenburg" "von Sachsen-Coburg-Gotha" "von Sachsen-Meiningen"
+        "von Sachsen-Weimar-Eisenach" "von Schlieffen" "von Schwarzburg" "von Spee" "von Tirpitz" "von Waldeck und Pyrmont" "von Wettin"
+        "von Wrangel" "von Zieten" "zur Lippe" "von Roon" }
+    }
     south_german = {
         color = { 140 110 110 } #{ 110 80 80 }
         first_names = { Adolf Albrecht Alexander Alfons Alois Anton Arthur Bernhard Christian
@@ -400,6 +432,39 @@ finnougric = {
         Sihvo Siilasvuo Talvela Thesleff Tujulin Tuompo "von Hesse-Kassel" Walden Wallenius Wetzer }
         radicalism = 5
     }
+    kven = {
+        color = {120 255 255}
+        first_names = { Aatto Akseli Aleksanteri Anders Aukusti Edvard Eemil Erkki Erno Fabian
+        Fredrik Fridolf Georg Gösta Harald Hjalmar Hugo Johannes Juho Kaarlo
+        Kurt Lars Martti Mikko Paavo Petteri Rudolf Väinö Viktor Vilho }
+
+        last_names = { Airo Alopaeus Aspara Cajander Ehrnrooth Heinrichs Heiskanen Holsti Ignatius Järnefält
+        Linder Mannerheim Multamäki Nenonen Oesch Öquist Österman Paasikivi Raappana Ramsay
+        Sihvo Siilasvuo Talvela Thesleff Tujulin Tuompo "von Hesse-Kassel" Walden Wallenius Wetzer }
+        radicalism = 5
+    }
+    forest_finnish = {
+        color = {120 255 55}
+        first_names = { Aatto Akseli Aleksanteri Anders Aukusti Edvard Eemil Erkki Erno Fabian
+        Fredrik Fridolf Georg Gösta Harald Hjalmar Hugo Johannes Juho Kaarlo
+        Kurt Lars Martti Mikko Paavo Petteri Rudolf Väinö Viktor Vilho }
+
+        last_names = { Airo Alopaeus Aspara Cajander Ehrnrooth Heinrichs Heiskanen Holsti Ignatius Järnefält
+        Linder Mannerheim Multamäki Nenonen Oesch Öquist Österman Paasikivi Raappana Ramsay
+        Sihvo Siilasvuo Talvela Thesleff Tujulin Tuompo "von Hesse-Kassel" Walden Wallenius Wetzer }
+        radicalism = 5
+    }
+    tornedalian = {
+        color = {120 55 255}
+        first_names = { Aatto Akseli Aleksanteri Anders Aukusti Edvard Eemil Erkki Erno Fabian
+        Fredrik Fridolf Georg Gösta Harald Hjalmar Hugo Johannes Juho Kaarlo
+        Kurt Lars Martti Mikko Paavo Petteri Rudolf Väinö Viktor Vilho }
+
+        last_names = { Airo Alopaeus Aspara Cajander Ehrnrooth Heinrichs Heiskanen Holsti Ignatius Järnefält
+        Linder Mannerheim Multamäki Nenonen Oesch Öquist Österman Paasikivi Raappana Ramsay
+        Sihvo Siilasvuo Talvela Thesleff Tujulin Tuompo "von Hesse-Kassel" Walden Wallenius Wetzer }
+        radicalism = 5
+    }
     hungarian = {
         color = { 225 255 195 }
         first_names = { Alajos Albert Álmos Anasztáz András Arisztid Aurél Béla Benedek Béni
@@ -522,6 +587,11 @@ finnougric = {
     }
 	livonian = {
         color = {65 120 65}
+        first_names = { Aleksandr Dmitri Ivan Jukka Santeri Vladimir }
+        last_names = { Kokko Likhachev Mamin Minin Sibiriak  Tikhanov Zubov }
+    }
+	seto = {
+        color = {65 10 165}
         first_names = { Aleksandr Dmitri Ivan Jukka Santeri Vladimir }
         last_names = { Kokko Likhachev Mamin Minin Sibiriak  Tikhanov Zubov }
     }
@@ -959,6 +1029,20 @@ french = {
         Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
         Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Vaillant }
     }
+    cagot = {
+        color = {120 120 20}
+        first_names = { Achille Adolphe Adrien Aimable Alphonse Amédée Antoine Armand August Augustin
+        Charles Daniel Denis Édouard Elie Éttiene Eugène Félicien Félix Fernand
+        François Frédéric Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean
+        Joseph Jules Julien Lazare Léopold Leroy Louis Lucien Matthieu Michel
+        Napoléon Nicolas Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas }
+
+        last_names = { Anthoine "Baraguey d'Hilliers" Bazaine Billot Bonaparte Bosquet "Boué de Lapeyrère" Bouët-Willaumez Boulanger Bourbaki
+        Bugeaud Caillard Canrobert Courbet Cousin-Mountauban Davout "de Bourbon" "de Castellane" "de Castelnau" "de Gaulle"
+        "de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Dubail Dubois Duchêne Dupetit-Thouars Exelmans
+        Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
+        Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Vaillant }
+    }
     wallonian = {
         color = { 60 35 140 }
         first_names = { Albert Alexandre Alexis Alphonse André Antoine Auguste Barthélémy Baudouin Blaise Camille Clément Charles Constant
@@ -1000,31 +1084,31 @@ french = {
     }
 	guernesais = {
         color = {70 200 236}
-        first_names = { Achille Adolphe Adrien Aimable Alphonse Amï¿½dï¿½e Antoine Armand August Augustin
-        Charles Daniel Denis ï¿½douard Elie ï¿½ttiene Eugï¿½ne Fï¿½licien Fï¿½lix Fernand
-        Franï¿½ois Frï¿½dï¿½ric Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean
-        Joseph Jules Julien Lazare Lï¿½opold Leroy Louis Lucien Matthieu Michel
-        Napolï¿½on Nicolas Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas }
+        first_names = { Achille Adolphe Adrien Aimable Alphonse Amédée Antoine Armand August Augustin
+        Charles Daniel Denis Édouard Elie Éttiene Eugène Félicien Félix Fernand
+        François Frédéric Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean
+        Joseph Jules Julien Lazare Léopold Leroy Louis Lucien Matthieu Michel
+        Napoléon Nicolas Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas }
 	
-        last_names = { Anthoine "Baraguey d'Hilliers" Bazaine Billot Bonaparte Bosquet "Bouï¿½ de Lapeyrï¿½re" Bouï¿½t-Willaumez Boulanger Bourbaki
+        last_names = { Anthoine "Baraguey d'Hilliers" Bazaine Billot Bonaparte Bosquet "Boué de Lapeyrère" Bouët-Willaumez Boulanger Bourbaki
         Bugeaud Caillard Canrobert Courbet Cousin-Mountauban Davout "de Bourbon" "de Castellane" "de Castelnau" "de Gaulle"
-        "de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Dubail Dubois Duchï¿½ne Dupetit-Thouars Exelmans
-        Foch Forey "Franchet d'Espï¿½rey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
-        Jaurï¿½s Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Pï¿½llissier Petain Vaillant }
+        "de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Dubail Dubois Duchêne Dupetit-Thouars Exelmans
+        Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
+        Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Vaillant }
     }
 	jerriais = {
         color = {150 120 236}
-        first_names = { Achille Adolphe Adrien Aimable Alphonse Amï¿½dï¿½e Antoine Armand August Augustin
-        Charles Daniel Denis ï¿½douard Elie ï¿½ttiene Eugï¿½ne Fï¿½licien Fï¿½lix Fernand
-        Franï¿½ois Frï¿½dï¿½ric Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean
-        Joseph Jules Julien Lazare Lï¿½opold Leroy Louis Lucien Matthieu Michel
-        Napolï¿½on Nicolas Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas }
+        first_names = { Achille Adolphe Adrien Aimable Alphonse Amédée Antoine Armand August Augustin
+        Charles Daniel Denis Édouard Elie Éttiene Eugène Félicien Félix Fernand
+        François Frédéric Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean
+        Joseph Jules Julien Lazare Léopold Leroy Louis Lucien Matthieu Michel
+        Napoléon Nicolas Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas }
 	
-        last_names = { Anthoine "Baraguey d'Hilliers" Bazaine Billot Bonaparte Bosquet "Bouï¿½ de Lapeyrï¿½re" Bouï¿½t-Willaumez Boulanger Bourbaki
+        last_names = { Anthoine "Baraguey d'Hilliers" Bazaine Billot Bonaparte Bosquet "Boué de Lapeyrère" Bouët-Willaumez Boulanger Bourbaki
         Bugeaud Caillard Canrobert Courbet Cousin-Mountauban Davout "de Bourbon" "de Castellane" "de Castelnau" "de Gaulle"
-        "de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Dubail Dubois Duchï¿½ne Dupetit-Thouars Exelmans
-        Foch Forey "Franchet d'Espï¿½rey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
-        Jaurï¿½s Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Pï¿½llissier Petain Vaillant }
+        "de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Dubail Dubois Duchêne Dupetit-Thouars Exelmans
+        Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
+        Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Vaillant }
     }
 	norman = {
         color = {70 120 236}
@@ -1340,6 +1424,21 @@ polish_culture_group = {
         Taczaneowski Traugutt Wawrzecki Wieniawa-Dlugoszowski Wybicki Wysocki Zajaczek Zaluski Zamoyski Zeligowski }
         radicalism = 10
     }
+	vilamovian = {
+        color = {120 120 120}
+        first_names = { Adam Aleksander Antoni Boleslaw Bonawentura Bronislaw Dezydery Edmund Edward Emil
+        Eustachy Felicjan Franciszek Gustaw Henryk Ignacy Jakub Jan Jedrzej Józef
+        Juliusz Karol Kazimierz Klemens Konstanty Lech Leon Leopold Lucjan Ludwik
+        Maciej Marceli Marian Mariusz Melchior Michal Mieczyslaw Roman Romuald Samuel
+        Stanislaw Stefan Tadeusz Tomasz Waclaw Wilhelm Witold Wladyslaw Wojciech Zygmunt }
+
+        last_names = { Bem Bór-Komorowski Brzóska Chalasinski Chlaposwski Chlopicki Chrzanowski Dabrowski Dembinski Fabryvy
+        Hauke-Boask Iszikowski Jasinski Klicki Konopczynski Krukowiecki Kruszewski Langiewicz Madalinski Mierolawski
+        Mikolajczyk Mokronowski Niepokólczycki Ostrowski Pac Pilsudski Poniatowski Potocki Preadzynski Radziwill
+        Rokossowski Rola-Zymierski Rómmel Rózicky Rybinski Rydz-Smigly Sanguszko Skrzynecki Soltyk Sowinski
+        Taczaneowski Traugutt Wawrzecki Wieniawa-Dlugoszowski Wybicki Wysocki Zajaczek Zaluski Zamoyski Zeligowski }
+        radicalism = 10
+    }
 	goral = {
         color = {55 120 120}
         first_names = { Tomasz Alicja Stefan Andrzej Sebastian Justyna Wladyslaw Jan Kanty Józef Tadeusz Jerzy }
@@ -1461,6 +1560,19 @@ east_slavic = {
                           Nikolaevich Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev
                           Shuvalov Surkov Tukhachevsky Yegorov Yudenich Vorontsov Voroshilov Zavoyko }
     }
+    molokan = {
+        color = {40 40 40}
+           first_names = { Aleksandr Alexei Andrei Anton Boris Dmitry Fyodor Gennady
+                         Giorgi Grigoriy Igor Ivan Kirill Konstantin Lavr Leonid Lev Maxim
+                         Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei
+                         Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yuri }
+
+           last_names = { Alexseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin
+                          Dragomirov Frolov Golivin Grishin Gurko Ivanov Konev Konstantinov Kornilov
+                          Kolchak Kuropatkin Lazarev Makarov Menshikov Nakhimov Nebogatov
+                          Nikolaevich Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev
+                          Shuvalov Surkov Tukhachevsky Yegorov Yudenich Vorontsov Voroshilov Zavoyko }
+    }
     pomor = {
         color = {0 170 10}
            first_names = { Aleksandr Alexei Andrei Anton Boris Dmitry Fyodor Gennady
@@ -1487,6 +1599,50 @@ east_slavic = {
         }
     ukrainian = {
         color = {160 160 60}
+            first_names = { Alexei Andrei Anton Arkadiy Borys Dmitro Fyodor Hryhoriy Ivan Lavr Leonid Lev
+                             Mikhail Mykola Nikita  Oleksandr Pavel Petro Roman Semyon Sergiy Valeriy
+                             Viktor Volodimir Vladislav Yuriy }
+
+            last_names = { Bezruchko Chernyakhovsky Dyachenko Gamula Grigoriev Hrekov Ivanenko Ivanov
+                            Kapustiansky Kondratenko Leshchenko Leshchinskiy "Omelianovych-Pavlenko"
+                            Paskevich Petliura Radchenko Shevchenko Skoropadskyi Stefaniv Tymoshenko Vitovsky }
+            radicalism = 10
+        }
+    hutsul = {
+        color = {220 120 60}
+            first_names = { Alexei Andrei Anton Arkadiy Borys Dmitro Fyodor Hryhoriy Ivan Lavr Leonid Lev
+                             Mikhail Mykola Nikita  Oleksandr Pavel Petro Roman Semyon Sergiy Valeriy
+                             Viktor Volodimir Vladislav Yuriy }
+
+            last_names = { Bezruchko Chernyakhovsky Dyachenko Gamula Grigoriev Hrekov Ivanenko Ivanov
+                            Kapustiansky Kondratenko Leshchenko Leshchinskiy "Omelianovych-Pavlenko"
+                            Paskevich Petliura Radchenko Shevchenko Skoropadskyi Stefaniv Tymoshenko Vitovsky }
+            radicalism = 10
+        }
+    lemko = {
+        color = {207 204 115}
+            first_names = { Alexei Andrei Anton Arkadiy Borys Dmitro Fyodor Hryhoriy Ivan Lavr Leonid Lev
+                             Mikhail Mykola Nikita  Oleksandr Pavel Petro Roman Semyon Sergiy Valeriy
+                             Viktor Volodimir Vladislav Yuriy }
+
+            last_names = { Bezruchko Chernyakhovsky Dyachenko Gamula Grigoriev Hrekov Ivanenko Ivanov
+                            Kapustiansky Kondratenko Leshchenko Leshchinskiy "Omelianovych-Pavlenko"
+                            Paskevich Petliura Radchenko Shevchenko Skoropadskyi Stefaniv Tymoshenko Vitovsky }
+            radicalism = 10
+        }
+    boyko = {
+        color = {107 104 15}
+            first_names = { Alexei Andrei Anton Arkadiy Borys Dmitro Fyodor Hryhoriy Ivan Lavr Leonid Lev
+                             Mikhail Mykola Nikita  Oleksandr Pavel Petro Roman Semyon Sergiy Valeriy
+                             Viktor Volodimir Vladislav Yuriy }
+
+            last_names = { Bezruchko Chernyakhovsky Dyachenko Gamula Grigoriev Hrekov Ivanenko Ivanov
+                            Kapustiansky Kondratenko Leshchenko Leshchinskiy "Omelianovych-Pavlenko"
+                            Paskevich Petliura Radchenko Shevchenko Skoropadskyi Stefaniv Tymoshenko Vitovsky }
+            radicalism = 10
+        }
+    rusyn = {
+        color = {0 161 222}
             first_names = { Alexei Andrei Anton Arkadiy Borys Dmitro Fyodor Hryhoriy Ivan Lavr Leonid Lev
                              Mikhail Mykola Nikita  Oleksandr Pavel Petro Roman Semyon Sergiy Valeriy
                              Viktor Volodimir Vladislav Yuriy }
@@ -1571,6 +1727,91 @@ levantine = {
     leader = european
     greek = {
         color = { 122  180  210 }
+        first_names = { Adamantios Alexandros Anastasios Andreas Antonios Aristidis Athanasios Augustinos Benizelos Charalambos
+        Charilaos Dimitrios Diomidis Eleftherios Emmanouil Epameinontas Evripidis Gennaios Georgios Ilias
+        Ionnis Kitsos Konstantinos Kyriakos Kyriakoulis Leonidas Makarios Markos Mikhael Militiadis
+        Nikolaos Odysseas Othon Panagiotis Pavlos Petros Sofoklis Sotiris Spyridion Spyros
+        Staikos Stefanos Stylianos Themistoklis Theodoros Tharyvoulos Tzannis Vasos Viktor Zinovios
+        }
+
+        last_names = { Charalambis Christakis-Zografos Danglis Dousmanis Foumis Gonatas Hatzianestis Kallergis Kanaris Katsimiros
+        Kolokotronis Kondylis Kountouriotis Kriezis Makriyannis Manos Mavrocordatos Mavrovouniotis Metaxas Mouskos
+        Nider Othonaios Palaskas Pangalos Papadiamantopoulos Papadopoulos Papagos Papoulas Parakevopouolos Plapoutas
+        Plastiras Sapountzakis Sarafis Smolenskis Sofoulis Soutsos Spyromilios Staikopoulos Stanotas "tes Elladas"
+        Trikoupis Tsakalotos Tsolakoglou Typaldos-Alfonsatos Tzavelas Vassos Venizelos Voulgaris Zaimis Zymvrakakis
+        }
+        radicalism = 10
+    }
+    urum = {
+        color = { 210  140  90 }
+        first_names = { Adamantios Alexandros Anastasios Andreas Antonios Aristidis Athanasios Augustinos Benizelos Charalambos
+        Charilaos Dimitrios Diomidis Eleftherios Emmanouil Epameinontas Evripidis Gennaios Georgios Ilias
+        Ionnis Kitsos Konstantinos Kyriakos Kyriakoulis Leonidas Makarios Markos Mikhael Militiadis
+        Nikolaos Odysseas Othon Panagiotis Pavlos Petros Sofoklis Sotiris Spyridion Spyros
+        Staikos Stefanos Stylianos Themistoklis Theodoros Tharyvoulos Tzannis Vasos Viktor Zinovios
+        }
+
+        last_names = { Charalambis Christakis-Zografos Danglis Dousmanis Foumis Gonatas Hatzianestis Kallergis Kanaris Katsimiros
+        Kolokotronis Kondylis Kountouriotis Kriezis Makriyannis Manos Mavrocordatos Mavrovouniotis Metaxas Mouskos
+        Nider Othonaios Palaskas Pangalos Papadiamantopoulos Papadopoulos Papagos Papoulas Parakevopouolos Plapoutas
+        Plastiras Sapountzakis Sarafis Smolenskis Sofoulis Soutsos Spyromilios Staikopoulos Stanotas "tes Elladas"
+        Trikoupis Tsakalotos Tsolakoglou Typaldos-Alfonsatos Tzavelas Vassos Venizelos Voulgaris Zaimis Zymvrakakis
+        }
+        radicalism = 10
+    }
+    rumeika = {
+        color = { 62  120  230 }
+        first_names = { Adamantios Alexandros Anastasios Andreas Antonios Aristidis Athanasios Augustinos Benizelos Charalambos
+        Charilaos Dimitrios Diomidis Eleftherios Emmanouil Epameinontas Evripidis Gennaios Georgios Ilias
+        Ionnis Kitsos Konstantinos Kyriakos Kyriakoulis Leonidas Makarios Markos Mikhael Militiadis
+        Nikolaos Odysseas Othon Panagiotis Pavlos Petros Sofoklis Sotiris Spyridion Spyros
+        Staikos Stefanos Stylianos Themistoklis Theodoros Tharyvoulos Tzannis Vasos Viktor Zinovios
+        }
+
+        last_names = { Charalambis Christakis-Zografos Danglis Dousmanis Foumis Gonatas Hatzianestis Kallergis Kanaris Katsimiros
+        Kolokotronis Kondylis Kountouriotis Kriezis Makriyannis Manos Mavrocordatos Mavrovouniotis Metaxas Mouskos
+        Nider Othonaios Palaskas Pangalos Papadiamantopoulos Papadopoulos Papagos Papoulas Parakevopouolos Plapoutas
+        Plastiras Sapountzakis Sarafis Smolenskis Sofoulis Soutsos Spyromilios Staikopoulos Stanotas "tes Elladas"
+        Trikoupis Tsakalotos Tsolakoglou Typaldos-Alfonsatos Tzavelas Vassos Venizelos Voulgaris Zaimis Zymvrakakis
+        }
+        radicalism = 10
+    }
+    karamanli = {
+        color = { 180  122  210 }
+        first_names = { Adamantios Alexandros Anastasios Andreas Antonios Aristidis Athanasios Augustinos Benizelos Charalambos
+        Charilaos Dimitrios Diomidis Eleftherios Emmanouil Epameinontas Evripidis Gennaios Georgios Ilias
+        Ionnis Kitsos Konstantinos Kyriakos Kyriakoulis Leonidas Makarios Markos Mikhael Militiadis
+        Nikolaos Odysseas Othon Panagiotis Pavlos Petros Sofoklis Sotiris Spyridion Spyros
+        Staikos Stefanos Stylianos Themistoklis Theodoros Tharyvoulos Tzannis Vasos Viktor Zinovios
+        }
+
+        last_names = { Charalambis Christakis-Zografos Danglis Dousmanis Foumis Gonatas Hatzianestis Kallergis Kanaris Katsimiros
+        Kolokotronis Kondylis Kountouriotis Kriezis Makriyannis Manos Mavrocordatos Mavrovouniotis Metaxas Mouskos
+        Nider Othonaios Palaskas Pangalos Papadiamantopoulos Papadopoulos Papagos Papoulas Parakevopouolos Plapoutas
+        Plastiras Sapountzakis Sarafis Smolenskis Sofoulis Soutsos Spyromilios Staikopoulos Stanotas "tes Elladas"
+        Trikoupis Tsakalotos Tsolakoglou Typaldos-Alfonsatos Tzavelas Vassos Venizelos Voulgaris Zaimis Zymvrakakis
+        }
+        radicalism = 10
+    }
+    pontic = {
+        color = { 32  90  120 }
+        first_names = { Adamantios Alexandros Anastasios Andreas Antonios Aristidis Athanasios Augustinos Benizelos Charalambos
+        Charilaos Dimitrios Diomidis Eleftherios Emmanouil Epameinontas Evripidis Gennaios Georgios Ilias
+        Ionnis Kitsos Konstantinos Kyriakos Kyriakoulis Leonidas Makarios Markos Mikhael Militiadis
+        Nikolaos Odysseas Othon Panagiotis Pavlos Petros Sofoklis Sotiris Spyridion Spyros
+        Staikos Stefanos Stylianos Themistoklis Theodoros Tharyvoulos Tzannis Vasos Viktor Zinovios
+        }
+
+        last_names = { Charalambis Christakis-Zografos Danglis Dousmanis Foumis Gonatas Hatzianestis Kallergis Kanaris Katsimiros
+        Kolokotronis Kondylis Kountouriotis Kriezis Makriyannis Manos Mavrocordatos Mavrovouniotis Metaxas Mouskos
+        Nider Othonaios Palaskas Pangalos Papadiamantopoulos Papadopoulos Papagos Papoulas Parakevopouolos Plapoutas
+        Plastiras Sapountzakis Sarafis Smolenskis Sofoulis Soutsos Spyromilios Staikopoulos Stanotas "tes Elladas"
+        Trikoupis Tsakalotos Tsolakoglou Typaldos-Alfonsatos Tzavelas Vassos Venizelos Voulgaris Zaimis Zymvrakakis
+        }
+        radicalism = 10
+    }
+    cappadocian = {
+        color = { 78  220  210 }
         first_names = { Adamantios Alexandros Anastasios Andreas Antonios Aristidis Athanasios Augustinos Benizelos Charalambos
         Charilaos Dimitrios Diomidis Eleftherios Emmanouil Epameinontas Evripidis Gennaios Georgios Ilias
         Ionnis Kitsos Konstantinos Kyriakos Kyriakoulis Leonidas Makarios Markos Mikhael Militiadis
@@ -2544,7 +2785,164 @@ iranian_turanian = {
         radicalism = 35
 
     }
+	
+	parachi = {
+        color = {99 51 0}
+
+        first_names = {
+            Abdallah "Abd al-Rahman" "Abd al-Quddus" Afzal Ahmad Akbar Akram Ayyub Fath "Firuz al-Din" "Habib Alllah" Haydar Humayun "Inayat Allah" Ishaq Jamal Kamran Kohandil Mahmud Mahsud Mihrdil Muhammad Murad Nadir "Nasr Allah" Omar Qaysar Shahpur "Sher Ali" Shuja Suleyman Timur Yaqub Zaman
+        }
+        last_names = {
+            Khan Ghilzai Adamkhel Afridi Sarbanri Abdali Yusufzai Omarkhel Pashtun Dilazak Atcha Babar Burki Bangash Bannuchi Chamkanni "Daulat Khel" "isa Khel" Davi Durrani Edo-Khel Gandapur Gujjar "Hafiz Khel" Jadoon Jahangiri Kakakhel Khakwani Kakar Kakazai Khalil Kharoti Khattak Khudiadadzai Khulozai Kuchelai Kuchis Kundi Lodhi Mian "Maghdud Khel" "Mahmud Khel" Tanoli Malik Mughal "Mahsud Khel" Mamund Manduri Marwat Mashwanis Mohamedzai Mohmand Mullagori Niazi Noorzai Orakzai Popalzai Qazi Shinwari Sadozai Salarzai Sarbans Shilmani Sulemani Shirani Sumbal Suri Swati Tareen Tarkani Tahirkheli Tokhi Turkhel "Umar Khel" Umarzai "Uthman khel" Wur "Yousafzai" "Yusaf Khel"
+        }
+        radicalism = 35
+
+    }
     pamiri = {
+        color = {132 117 151}
+            first_names = {
+            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+            Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali"
+            Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin
+            Nadir "Naser ed-Din" Nosret Reza
+            }
+        last_names = {
+            Khan Tajik Emomali Shohmurod Rahbar Ghoib Fayzullo Sabouri Furmuli Badakhshi Baghlani Mazari Panjsheri Kabuli Herati Kohistani
+            }
+        radicalism = 10
+    }
+	
+    wakhi = {
+        color = { 230 130 50}
+            first_names = {
+            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+            Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali"
+            Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin
+            Nadir "Naser ed-Din" Nosret Reza
+            }
+        last_names = {
+            Khan Tajik Emomali Shohmurod Rahbar Ghoib Fayzullo Sabouri Furmuli Badakhshi Baghlani Mazari Panjsheri Kabuli Herati Kohistani
+            }
+        radicalism = 10
+    }
+    shughni = {
+        color = { 20 40 160}
+            first_names = {
+            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+            Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali"
+            Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin
+            Nadir "Naser ed-Din" Nosret Reza
+            }
+        last_names = {
+            Khan Tajik Emomali Shohmurod Rahbar Ghoib Fayzullo Sabouri Furmuli Badakhshi Baghlani Mazari Panjsheri Kabuli Herati Kohistani
+            }
+        radicalism = 10
+    }
+    khufi = {
+        color = {240 64 43}
+            first_names = {
+            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+            Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali"
+            Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin
+            Nadir "Naser ed-Din" Nosret Reza
+            }
+        last_names = {
+            Khan Tajik Emomali Shohmurod Rahbar Ghoib Fayzullo Sabouri Furmuli Badakhshi Baghlani Mazari Panjsheri Kabuli Herati Kohistani
+            }
+        radicalism = 10
+    }
+    sanglechi = {
+        color = {230 230 230}
+            first_names = {
+            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+            Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali"
+            Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin
+            Nadir "Naser ed-Din" Nosret Reza
+            }
+        last_names = {
+            Khan Tajik Emomali Shohmurod Rahbar Ghoib Fayzullo Sabouri Furmuli Badakhshi Baghlani Mazari Panjsheri Kabuli Herati Kohistani
+            }
+        radicalism = 10
+    }
+    rushani = {
+        color = {170 200 228}
+            first_names = {
+            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+            Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali"
+            Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin
+            Nadir "Naser ed-Din" Nosret Reza
+            }
+        last_names = {
+            Khan Tajik Emomali Shohmurod Rahbar Ghoib Fayzullo Sabouri Furmuli Badakhshi Baghlani Mazari Panjsheri Kabuli Herati Kohistani
+            }
+        radicalism = 10
+    }
+    ishkashimi = {
+        color = {221 248 75}
+            first_names = {
+            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+            Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali"
+            Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin
+            Nadir "Naser ed-Din" Nosret Reza
+            }
+        last_names = {
+            Khan Tajik Emomali Shohmurod Rahbar Ghoib Fayzullo Sabouri Furmuli Badakhshi Baghlani Mazari Panjsheri Kabuli Herati Kohistani
+            }
+        radicalism = 10
+    }
+    vanji = {
+        color = {132 70 171}
+            first_names = {
+            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+            Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali"
+            Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin
+            Nadir "Naser ed-Din" Nosret Reza
+            }
+        last_names = {
+            Khan Tajik Emomali Shohmurod Rahbar Ghoib Fayzullo Sabouri Furmuli Badakhshi Baghlani Mazari Panjsheri Kabuli Herati Kohistani
+            }
+        radicalism = 10
+    }
+    oroshi = {
+        color = { 90 210 130}
+            first_names = {
+            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+            Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali"
+            Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin
+            Nadir "Naser ed-Din" Nosret Reza
+            }
+        last_names = {
+            Khan Tajik Emomali Shohmurod Rahbar Ghoib Fayzullo Sabouri Furmuli Badakhshi Baghlani Mazari Panjsheri Kabuli Herati Kohistani
+            }
+        radicalism = 10
+    }
+    bartangi = {
+        color = { 207 20 43}
+            first_names = {
+            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+            Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali"
+            Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin
+            Nadir "Naser ed-Din" Nosret Reza
+            }
+        last_names = {
+            Khan Tajik Emomali Shohmurod Rahbar Ghoib Fayzullo Sabouri Furmuli Badakhshi Baghlani Mazari Panjsheri Kabuli Herati Kohistani
+            }
+        radicalism = 10
+    }
+    oroshori = {
+        color = {255 98 76}
+            first_names = {
+            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+            Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali"
+            Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin
+            Nadir "Naser ed-Din" Nosret Reza
+            }
+        last_names = {
+            Khan Tajik Emomali Shohmurod Rahbar Ghoib Fayzullo Sabouri Furmuli Badakhshi Baghlani Mazari Panjsheri Kabuli Herati Kohistani
+            }
+        radicalism = 10
+    }
+    sarikoli = {
         color = {132 117 151}
             first_names = {
             Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
@@ -2830,6 +3228,16 @@ central_asian = {
     }
     tatar = {
         color = {45 87 99}
+        first_names = {
+            Asaf Baqi Galiaskar Ismail Makhmut  Musa Rustam Yusuf
+        }
+        last_names = {
+            Amirkhanov Faysi Gizzat Ibragimov Kamal Khusainov Tinchurin Tukay Yanbayev
+        }
+        radicalism = 10
+    }
+    lipka = {
+        color = {245 87 99}
         first_names = {
             Asaf Baqi Galiaskar Ismail Makhmut  Musa Rustam Yusuf
         }
@@ -3354,6 +3762,22 @@ south_asian = {
     }
 	brahui = {
         color = {75 150 126}
+        first_names = {
+            Naseer Noori Muhammad Mahmud "Shah Nawaz" Khudadad Jan Yar
+            Abdullah Ahmad Azam
+            Mehrab Muhabbat
+            Nawaz Abdallah Shah
+            Samandar Sherdil
+        }
+	
+        last_names = {
+            Brahui Achmadzai Gurguari Iltazai Kalandari Kambrani Mirwari Rodeni Sumalari Jhalawani Sawarani "Muhammad Shahi"
+            Koord Kalati Ahmedzai Khan
+        }
+        radicalism = 10
+    }
+	dehwar = {
+        color = {150 75 126}
         first_names = {
             Naseer Noori Muhammad Mahmud "Shah Nawaz" Khudadad Jan Yar
             Abdullah Ahmad Azam
@@ -4199,20 +4623,20 @@ far_east_asian = {
     unit = ChineseGC
     japanese = {
         color = {230 230 230}
-        first_names = { Akagi Arisugawa Arichi Akiyama Araki Dewa Enomoto Hasegawa Honjo Ito Inoue Ichinohe Itagaki Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu Makino Muto Minami Masaki Matsudaira Nakamuta Nogi Nire Nozu Okubo Oyama Omura Oku Okada Osumi
-        Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa Tojo Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa Uehara Uryu Ugaki Ueda Yamada Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya Uesugi Takeda Abe Usami Watanabe Honda Hosokawa Asai Ashikaga Chosokabe Date Fukushima Hachisuka Hattori Heike Hojo Ishida Kaga Kuki Maeda Miyamoto Mori Murakami Oda Okamoto Ooka Saito Shibata Shimazu Suwa Tamemoto Takigawa Tanuma Ukita Konoe Takashi Kujo Ichijo Gojo Aburakoji Anenokoji Asukai  Hirohata Imaidegawa Inokuma Jimyoin Kajuji Kaoin Karasuma Kawashi Konjo Kuga Masachika Matsuki Minase Nakayama Nanba Nomiya Oimikado Reizei Saionji Sanjo Shigenoi Shijo Shimizudani Tokudaiji Washio Yamashina
+        first_names = { Akagi Adachi Arisugawa Arichi Akiyama Araki Dewa Enomoto Hasegawa Honjo Ito Inoue Ichinohe Itagaki Izumi Kiryu Kujo Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu Mishima Makino Muto Majima Minami Masaki Matsudaira Nakamura Nogi Nire Nozu Okubo Oyama Omura Oku Okada Osumi
+        Saigo Suzuki Sakurai Sato Sakura Shibayama Shimamura Shirakawa Tojo Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa Uehara Uryu Ugaki Ueda Yamada Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya Uesugi Takeda Abe Usami Watanabe Honda Hosokawa Asai Ashikaga Chosokabe Date Fukushima Hachisuka Hattori Heike Hojo Ishida Kaga Kuki Maeda Mori Miyamoto Murakami Oda Okamoto Ooka Saito Shibata Shimazu Suwa Tamemoto Takigawa Tanuma Ukita Konoe Takashi Ichijo Gojo Aburakoji Anenokoji Asukai  Hirohata Imaidegawa Inokuma Jimyoin Kajuji Kaoin Karasuma Kawashi Konjo Kuga Masachika Matsuki Minase Nakayama Nanba Nomiya Oimikado Reizei Saionji Sanjo Shigenoi Shijo Shimizudani Tokudaiji Washio Yamashina
         }
 
-        last_names = { Akira Aritomo Daigo Goro Gentaro Genji Gonnohyoe Hajime Hanzo Heihachiro Hiroshi Hikonojo Hyoe Hayao Iwao Jotaro Jiro Jinzaburo Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo Nariaki Nobuyoshi Rokuro Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tomasaburo Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi Ieyasu
+        last_names = { Akira Aritomo Daigo Goro Gentaro Genji Gonnohyoe Hajime Hanzo Heihachi Heihachiro Hiroshi Hikonojo Hyoe Hayao Iwao Jotaro Jiro Jinzaburo Kazuma Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi Masahiro Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo Nariaki Nobuyoshi Rokuro Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tomasaburo Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi Ieyasu
         }
     }
 	okinawan = {
         color = {255 0 128}
-        first_names = { Arisugawa Arichi Akiyama Araki Dewa Enomoto Hasegawa Honjo Ito Inoue Ichinohe Itagaki Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu Makino Muto Minami Masaki Matsudaira Nakamuta Nogi Nire Nozu Okubo Oyama Omura Oku Okada Osumi
-        Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa Uehara Uryu Ugaki Ueda Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya Uesugi Takeda Abe Usami Watanabe Honda Hosokawa Asai    Askikaga Chosokabe Date Fukushima Genji Hachisuka Hattori Heike Hojo Ishida Kaga Kuki Maeda Miyamoto Mori Murakami Oda Okamoto Ooka Saito Shibata Shimazu Suwa Takigawa Tanuma Ukita Konoe Takashi Kujo Ichijo Gojo Aburakoji Anenokoji Asukai Daigo Hirohata Imaidegawa Inokuma Jimyoin Kajuji Kaoin Karasuma Kawashi Konjo Kuga Masachika    Matsuki    Minase    Nakayama Nanba Nomiya Oimikado Rakujochigusa Reizei Saioji Sanjo Shigenoi Shijo Shimizudani Tokudaiji Washio Yamashina
+        first_names = { Akagi Adachi Arisugawa Arichi Akiyama Araki Dewa Enomoto Hasegawa Honjo Ito Inoue Ichinohe Itagaki Izumi Kiryu Kujo Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu Mishima Makino Muto Majima Minami Masaki Matsudaira Nakamura Nogi Nire Nozu Okubo Oyama Omura Oku Okada Osumi
+        Saigo Suzuki Sakurai Sato Sakura Shibayama Shimamura Shirakawa Tojo Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa Uehara Uryu Ugaki Ueda Yamada Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya Uesugi Takeda Abe Usami Watanabe Honda Hosokawa Asai Ashikaga Chosokabe Date Fukushima Hachisuka Hattori Heike Hojo Ishida Kaga Kuki Maeda Mori Miyamoto Murakami Oda Okamoto Ooka Saito Shibata Shimazu Suwa Tamemoto Takigawa Tanuma Ukita Konoe Takashi Ichijo Gojo Aburakoji Anenokoji Asukai  Hirohata Imaidegawa Inokuma Jimyoin Kajuji Kaoin Karasuma Kawashi Konjo Kuga Masachika Matsuki Minase Nakayama Nanba Nomiya Oimikado Reizei Saionji Sanjo Shigenoi Shijo Shimizudani Tokudaiji Washio Yamashina
         }
 
-        last_names = { Aritomo Goro Gentaro Gonnohyoe Heihachiro Hiroshi Hikonojo Hyoe Hayao Iwao Jiro Jinzaburo Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo Nariaki Nobuyoshi Rokuro Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi Ieyasu
+        last_names = { Akira Aritomo Daigo Goro Gentaro Genji Gonnohyoe Hajime Hanzo Heihachi Heihachiro Hiroshi Hikonojo Hyoe Hayao Iwao Jotaro Jiro Jinzaburo Kazuma Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi Masahiro Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo Nariaki Nobuyoshi Rokuro Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tomasaburo Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi Ieyasu
         }
     }
     korean = {
@@ -4795,13 +5219,13 @@ native_american = {
         last_names = { Piche Kiskiyew Crane Saddleback Buffalo Rain
         }
     }
-    #navajo = {
-    #    color = {83 111 191}
-    #    first_names = { Narbona Mariano Zarcillos Manuelito Herrero Barboncito Ganado "Henry Chee" "Digul Chee"
-    #    }
-    #    last_names = { Naat'aa Martinez Ch'ilhanjini Largos Delagado Grande Da'ghaaii To'tso'nii Dodge
-    #    }
-    #}
+    navajo = {
+        color = {83 111 191}
+        first_names = { Narbona Mariano Zarcillos Manuelito Herrero Barboncito Ganado "Henry Chee" "Digul Chee"
+        }
+        last_names = { Naat'aa Martinez Ch'ilhanjini Largos Delagado Grande Da'ghaaii To'tso'nii Dodge
+        }
+    }
     native_american_minor = {
         color = {128 55 98}
         first_names = { John Paul José Louis Mariano James David Jack Joel Charles Henry Ganado Herandez

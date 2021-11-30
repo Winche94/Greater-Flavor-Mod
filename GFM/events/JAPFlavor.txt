@@ -70,7 +70,7 @@ country_event = {
 	} 
 	
 	mean_time_to_happen = {
-		months = 4
+		months = 2
 		modifier = { 
 			money = 50000
 			factor = 0.8
@@ -360,7 +360,6 @@ country_event = {
 		civilization_progress = 0.75
 		has_country_flag = sonno_joi 
 		has_global_flag = order_to_expel_barbarians
-		year = 1860 
 		NOT = { has_global_flag = boshin_war }
 		NOT = { has_global_flag = boshin_war_has_happened } 
 		NOT = { has_country_flag = formed_shinsengumi } 
@@ -371,6 +370,7 @@ country_event = {
 		name = "EVT21138OPTA"
 		relation = { who = JAP value = -100 } 
 		JAP = { country_event = 21139 } 	
+		set_country_flag = formed_shinsengumi 
 	}
 	
 	mean_time_to_happen = { months = 1 } 
@@ -405,7 +405,6 @@ country_event = {
 		tag = JAP 
 		has_country_flag = sonno_joi
 		has_global_flag = order_to_expel_barbarians
-		year = 1860
 		any_owned_province = { has_province_modifier = shinsengumi_policing } 
 		NOT = { has_country_flag = ikedaya_incident } 
 		NOT = { has_global_flag = boshin_war } 
@@ -438,7 +437,7 @@ country_event = {
 } 
 
 country_event = { 
-	id = 89990
+	id = 899090
 	title = "EVTNAME899090" #Shishi Formation, popup for rest of Japan
 	desc = "EVTDESC899090"
 	picture = "shishi_warriors" 
@@ -446,6 +445,7 @@ country_event = {
 	is_triggered_only = yes 
 
 	option = { 
+		name = "EVT899090OPTA" 
 		any_pop = { 
 			limit = { is_primary_culture = yes } 
 			consciousness = 0.3 
@@ -461,7 +461,6 @@ country_event = {
 	
 	trigger = { 
 		tag = JAP 
-		year = 1860
 		has_global_flag = order_to_expel_barbarians 
 		has_global_flag = shishi_formed 
 		has_country_flag = sonno_joi 
@@ -491,6 +490,7 @@ country_event = {
 			limit = { 
 				primary_culture = japanese
 				NOT = { tag = RYU } 
+				NOT = { tag = TKG } 
 			} 
 			country_event = 899093
 		} 
@@ -505,7 +505,7 @@ country_event = {
 			factor = 0.5
 		}
 		modifier = { 
-			any_owned = { has_province_modifier = protest_dances } 
+			has_country_modifier = protest_dances  
 			factor = 1.5
 		}
 	} 
@@ -728,6 +728,52 @@ country_event = {
 } 
 
 country_event = { 
+	id = 899095 
+	title = "EVTNAME899095" #Sakuma Shozan's Assassination 
+	desc = "EVTDESC899095"
+	picture = "sakuma_shozan"
+	
+	trigger = { 
+		tag = JAP 
+		TKG = { 
+			NOT = { has_country_modifier = sakoku } 
+			NOT = { has_country_modifier = uncivilized_isolationism } 
+		}
+		has_global_flag = order_to_expel_barbarians
+		has_country_flag = sonno_joi 
+		NOT = { has_global_flag = boshin_war } 
+		NOT = { has_global_flag = boshin_war_has_happened } 
+		NOT = { has_global_flag = sakuma_assassinated } 
+	} 
+	
+	option = { 
+		name = "EVT899095OPTA"
+		any_pop = { 
+			consciousness = 1
+			militancy = 0.03
+		} 
+		research_points = 300
+		set_global_flag = sakuma_assassinated 
+	}
+	
+	mean_time_to_happen = { 
+		months = 5
+		modifier = {
+			factor = 0.8 
+			any_pop = { 
+				consciousness = 1
+			} 
+		} 
+		modifier = {
+			factor = 0.6
+			any_pop = { 
+				consciousness = 1.5
+			} 
+		}	
+	} 	
+} 
+
+country_event = { 
 	id = 21132 #Ansei Unequal Treaty Popup, Japan
 	title = "EVTNAME21132" 
 	desc = "EVTDESC21132" 
@@ -938,15 +984,25 @@ country_event = {
 			NOT = { 
 				has_global_flag = successful_first_embassy 
 				has_global_flag = failed_first_embassy 
-				any_greater_power = {
-					limit = { 
-						capital_scope = { 
-							continent = europe 
-						} 
-					}
-					relation = { who = THIS value = -150 } 
-					war_with = THIS 
-				} 
+				ENG = { relation = { who = THIS value = -150 } }
+				ENL = { relation = { who = THIS value = -150 } }
+				FRA = { relation = { who = THIS value = -150 } }
+				BOR = { relation = { who = THIS value = -150 } }
+				SPA = { relation = { who = THIS value = -150 } }
+				IBR = { relation = { who = THIS value = -150 } }
+				ITA = { relation = { who = THIS value = -150 } }
+				ITS = { relation = { who = THIS value = -150 } }
+				PRU = { relation = { who = THIS value = -150 } }
+				NGF = { relation = { who = THIS value = -150 } }
+				SGF = { relation = { who = THIS value = -150 } }
+				GER = { relation = { who = THIS value = -150 } }
+				GCF = { relation = { who = THIS value = -150 } }
+				AUS = { relation = { who = THIS value = -150 } }
+				AUB = { relation = { who = THIS value = -150 } }
+				KUK = { relation = { who = THIS value = -150 } }
+				DNB = { relation = { who = THIS value = -150 } }
+				TUR = { relation = { who = THIS value = -150 } }
+				RUS = { relation = { who = THIS value = -150 } }
 			}
 	} 
 	
@@ -958,9 +1014,6 @@ country_event = {
 		set_global_flag = successful_first_embassy
 		any_greater_power = { 
 			limit = {
-				capital_scope = { 
-					continent = europe 
-				} 
 				NOT = { 
 					casus_belli = THIS
 					war_with = THIS 
@@ -994,37 +1047,78 @@ country_event = {
 	mean_time_to_happen = { 
 		days = 100 
 		modifier = { 
-			any_greater_power = { 
-				limit = { 
-					capital_scope = { 
-						continent = europe 
-					} 
-				} 
-				relation = { who = THIS value = 150 } 
-			}
 			factor = 0.75
+			OR = {
+				ENG = { relation = { who = THIS value = 150 } }
+				ENL = { relation = { who = THIS value = 150 } }
+				FRA = { relation = { who = THIS value = 150 } }
+				BOR = { relation = { who = THIS value = 150 } }
+				SPA = { relation = { who = THIS value = 150 } }
+				IBR = { relation = { who = THIS value = 150 } }
+				ITA = { relation = { who = THIS value = 150 } }
+				ITS = { relation = { who = THIS value = 150 } }
+				PRU = { relation = { who = THIS value = 150 } }
+				NGF = { relation = { who = THIS value = 150 } }
+				SGF = { relation = { who = THIS value = 150 } }
+				GER = { relation = { who = THIS value = 150 } }
+				GCF = { relation = { who = THIS value = 150 } }
+				AUS = { relation = { who = THIS value = 150 } }
+				AUB = { relation = { who = THIS value = 150 } }
+				KUK = { relation = { who = THIS value = 150 } }
+				DNB = { relation = { who = THIS value = 150 } }
+				TUR = { relation = { who = THIS value = 150 } }
+				RUS = { relation = { who = THIS value = 150 } }
+			}
+			
 		} 
 		modifier = { 
-			any_greater_power = { 
-				limit = { 
-					capital_scope = { 
-						continent = europe 
-					} 
-				} 
-				relation = { who = THIS value = 175 } 
-			}
 			factor = 0.5
-		} 
-		modifier = { 
-			any_greater_power = { 
-				limit = { 
-					capital_scope = { 
-						continent = europe 
-					} 
-				} 
-				relation = { who = THIS value = 200 } 
+			OR = {
+				ENG = { relation = { who = THIS value = 175 } }
+				ENL = { relation = { who = THIS value = 175 } }
+				FRA = { relation = { who = THIS value = 175 } }
+				BOR = { relation = { who = THIS value = 175 } }
+				SPA = { relation = { who = THIS value = 175 } }
+				IBR = { relation = { who = THIS value = 175 } }
+				ITA = { relation = { who = THIS value = 175 } }
+				ITS = { relation = { who = THIS value = 175 } }
+				PRU = { relation = { who = THIS value = 175 } }
+				NGF = { relation = { who = THIS value = 175 } }
+				SGF = { relation = { who = THIS value = 175 } }
+				GER = { relation = { who = THIS value = 175 } }
+				GCF = { relation = { who = THIS value = 175 } }
+				AUS = { relation = { who = THIS value = 175 } }
+				AUB = { relation = { who = THIS value = 175 } }
+				KUK = { relation = { who = THIS value = 175 } }
+				DNB = { relation = { who = THIS value = 175 } }
+				TUR = { relation = { who = THIS value = 175 } }
+				RUS = { relation = { who = THIS value = 175 } }
 			}
+		} 
+		modifier = {
 			factor = 0.25
+			OR = {
+				ENG = { relation = { who = THIS value = 200 } }
+				ENL = { relation = { who = THIS value = 200 } }
+				FRA = { relation = { who = THIS value = 200 } }
+				BOR = { relation = { who = THIS value = 200 } }
+				SPA = { relation = { who = THIS value = 200 } }
+				IBR = { relation = { who = THIS value = 200 } }
+				ITA = { relation = { who = THIS value = 200 } }
+				ITS = { relation = { who = THIS value = 200 } }
+				PRU = { relation = { who = THIS value = 200 } }
+				NGF = { relation = { who = THIS value = 200 } }
+				SGF = { relation = { who = THIS value = 200 } }
+				GER = { relation = { who = THIS value = 200 } }
+				GCF = { relation = { who = THIS value = 200 } }
+				AUS = { relation = { who = THIS value = 200 } }
+				AUB = { relation = { who = THIS value = 200 } }
+				KUK = { relation = { who = THIS value = 200 } }
+				DNB = { relation = { who = THIS value = 200 } }
+				TUR = { relation = { who = THIS value = 200 } }
+				RUS = { relation = { who = THIS value = 200 } }
+			}
+			
 		} 
 	} 
 	
@@ -1046,11 +1140,25 @@ country_event = {
 		NOT = { 
 			has_global_flag = successful_first_embassy 
 			has_global_flag = failed_first_embassy 
-			any_greater_power = {
-				limit = { continent = europe } 
-				relation = { who = THIS value = -150 } 
-				war_with = THIS 
-			} 
+				ENG = { relation = { who = THIS value = -150 } }
+				ENL = { relation = { who = THIS value = -150 } }
+				FRA = { relation = { who = THIS value = -150 } }
+				BOR = { relation = { who = THIS value = -150 } }
+				SPA = { relation = { who = THIS value = -150 } }
+				IBR = { relation = { who = THIS value = -150 } }
+				ITA = { relation = { who = THIS value = -150 } }
+				ITS = { relation = { who = THIS value = -150 } }
+				PRU = { relation = { who = THIS value = -150 } }
+				NGF = { relation = { who = THIS value = -150 } }
+				SGF = { relation = { who = THIS value = -150 } }
+				GER = { relation = { who = THIS value = -150 } }
+				GCF = { relation = { who = THIS value = -150 } }
+				AUS = { relation = { who = THIS value = -150 } }
+				AUB = { relation = { who = THIS value = -150 } }
+				KUK = { relation = { who = THIS value = -150 } }
+				DNB = { relation = { who = THIS value = -150 } }
+				TUR = { relation = { who = THIS value = -150 } }
+				RUS = { relation = { who = THIS value = -150 } }
 		} 	
 	}
 	
@@ -1064,14 +1172,13 @@ country_event = {
 		any_pop = { militancy = 0.5 } 
 		any_greater_power = { 
 			limit = { 
-				capital_scope = { 
-					continent = europe 
-				} 
-			} 
-				NOT = { 
+				NOT = {
+					tag = USA
+					tag = US2 
 					casus_belli = THIS
 					war_with = THIS 
 				} 
+			} 	
 			relation = { who = THIS value = -30 }	
 		} 		
 	} 				
@@ -1079,37 +1186,86 @@ country_event = {
 	mean_time_to_happen = { 
 		days = 100 
 		modifier = { 
-			any_greater_power = { 
-				limit = { 
-					capital_scope = { 
-						continent = europe 
-					} 
-				}	 
-				relation = { who = THIS value = -50 } 
-			}
 			factor = 0.75
-		} 
-		modifier = { 
-			any_greater_power = { 
-				limit = { 
-					capital_scope = { 
-						continent = europe 
-					} 
-				} 
-				relation = { who = THIS value = -75 } 
+			OR = {
+				ENG = { relation = { who = THIS value = -50 } }
+				ENL = { relation = { who = THIS value = -50 } }
+				FRA = { relation = { who = THIS value = -50 } }
+				BOR = { relation = { who = THIS value = -50 } }
+				SPA = { relation = { who = THIS value = -50 } }
+				IBR = { relation = { who = THIS value = -50 } }
+				ITA = { relation = { who = THIS value = -50 } }
+				ITS = { relation = { who = THIS value = -50 } }
+				PRU = { relation = { who = THIS value = -50 } }
+				NGF = { relation = { who = THIS value = -50 } }
+				SGF = { relation = { who = THIS value = -50 } }
+				GER = { relation = { who = THIS value = -50 } }
+				GCF = { relation = { who = THIS value = -50 } }
+				AUS = { relation = { who = THIS value = -50 } }
+				AUB = { relation = { who = THIS value = -50 } }
+				KUK = { relation = { who = THIS value = -50 } }
+				DNB = { relation = { who = THIS value = -50 } }
+				TUR = { relation = { who = THIS value = -50 } }
+				RUS = { relation = { who = THIS value = -50 } }			
 			}
-			factor = 0.5
+			
 		} 
 		modifier = { 
+			factor = 0.5
+			OR = {
+				ENG = { relation = { who = THIS value = -75 } }
+				ENL = { relation = { who = THIS value = -75 } }
+				FRA = { relation = { who = THIS value = -75 } }
+				BOR = { relation = { who = THIS value = -75 } }
+				SPA = { relation = { who = THIS value = -75 } }
+				IBR = { relation = { who = THIS value = -75 } }
+				ITA = { relation = { who = THIS value = -75 } }
+				ITS = { relation = { who = THIS value = -75 } }
+				PRU = { relation = { who = THIS value = -75 } }
+				NGF = { relation = { who = THIS value = -75 } }
+				SGF = { relation = { who = THIS value = -75 } }
+				GER = { relation = { who = THIS value = -75 } }
+				GCF = { relation = { who = THIS value = -75 } }
+				AUS = { relation = { who = THIS value = -75 } }
+				AUB = { relation = { who = THIS value = -75 } }
+				KUK = { relation = { who = THIS value = -75 } }
+				DNB = { relation = { who = THIS value = -75 } }
+				TUR = { relation = { who = THIS value = -75 } }
+				RUS = { relation = { who = THIS value = -75 } }
+			}
+			
+		} 
+		modifier = { 
+			factor = 0.25
 			any_greater_power = { 
-				limit = { 
-					capital_scope = { 
-						continent = europe 
-					} 
+				NOT = {
+					tag = USA
+					tag = US2
 				}
 				relation = { who = THIS value = -100 } 
+			}	
+			
+			OR = {
+				ENG = { relation = { who = THIS value = -50 } }
+				ENL = { relation = { who = THIS value = -50 } }
+				FRA = { relation = { who = THIS value = -50 } }
+				BOR = { relation = { who = THIS value = -50 } }
+				SPA = { relation = { who = THIS value = -50 } }
+				IBR = { relation = { who = THIS value = -50 } }
+				ITA = { relation = { who = THIS value = -50 } }
+				ITS = { relation = { who = THIS value = -50 } }
+				PRU = { relation = { who = THIS value = -50 } }
+				NGF = { relation = { who = THIS value = -50 } }
+				SGF = { relation = { who = THIS value = -50 } }
+				GER = { relation = { who = THIS value = -50 } }
+				GCF = { relation = { who = THIS value = -50 } }
+				AUS = { relation = { who = THIS value = -50 } }
+				AUB = { relation = { who = THIS value = -50 } }
+				KUK = { relation = { who = THIS value = -50 } }
+				DNB = { relation = { who = THIS value = -50 } }
+				TUR = { relation = { who = THIS value = -50 } }
+				RUS = { relation = { who = THIS value = -50 } }			
 			}
-			factor = 0.25
 		} 
 	}	
 }
@@ -1132,15 +1288,25 @@ country_event = {
 				has_global_flag = successful_second_embassy 
 				has_global_flag = failed_second_embassy  
 				has_global_flag = third_japanese_embassy_sent
-				any_greater_power = {
-					limit = { 
-						capital_scope = { 
-							continent = europe 
-						} 
-					} 
-					relation = { who = THIS value = -150 } 
-					war_with = THIS 
-				} 
+				ENG = { relation = { who = THIS value = -150 } }
+				ENL = { relation = { who = THIS value = -150 } }
+				FRA = { relation = { who = THIS value = -150 } }
+				BOR = { relation = { who = THIS value = -150 } }
+				SPA = { relation = { who = THIS value = -150 } }
+				IBR = { relation = { who = THIS value = -150 } }
+				ITA = { relation = { who = THIS value = -150 } }
+				ITS = { relation = { who = THIS value = -150 } }
+				PRU = { relation = { who = THIS value = -150 } }
+				NGF = { relation = { who = THIS value = -150 } }
+				SGF = { relation = { who = THIS value = -150 } }
+				GER = { relation = { who = THIS value = -150 } }
+				GCF = { relation = { who = THIS value = -150 } }
+				AUS = { relation = { who = THIS value = -150 } }
+				AUB = { relation = { who = THIS value = -150 } }
+				KUK = { relation = { who = THIS value = -150 } }
+				DNB = { relation = { who = THIS value = -150 } }
+				TUR = { relation = { who = THIS value = -150 } }
+				RUS = { relation = { who = THIS value = -150 } }
 			}  
 	} 
 	
@@ -1156,9 +1322,10 @@ country_event = {
 		set_global_flag = successful_second_embassy
 		any_greater_power = { 
 			limit = { 
-				capital_scope = { 
-					continent = europe 
-				} 
+				NOT = {
+					tag = USA
+					tag = US2
+				}
 			NOT = { 
 				casus_belli = TKG
 				war_with = TKG 
@@ -1176,38 +1343,77 @@ country_event = {
 	}
 	mean_time_to_happen = { 
 		days = 100 
-		modifier = { 
-			any_greater_power = { 
-				limit = { 
-					capital_scope = { 
-						continent = europe 
-					} 
-				}
-				relation = { who = THIS value = 150 } 
-			}
+		modifier = {
 			factor = 0.75
+			OR = {
+				ENG = { relation = { who = THIS value = 150 } }
+				ENL = { relation = { who = THIS value = 150 } }
+				FRA = { relation = { who = THIS value = 150 } }
+				BOR = { relation = { who = THIS value = 150 } }
+				SPA = { relation = { who = THIS value = 150 } }
+				IBR = { relation = { who = THIS value = 150 } }
+				ITA = { relation = { who = THIS value = 150 } }
+				ITS = { relation = { who = THIS value = 150 } }
+				PRU = { relation = { who = THIS value = 150 } }
+				NGF = { relation = { who = THIS value = 150 } }
+				SGF = { relation = { who = THIS value = 150 } }
+				GER = { relation = { who = THIS value = 150 } }
+				GCF = { relation = { who = THIS value = 150 } }
+				AUS = { relation = { who = THIS value = 150 } }
+				AUB = { relation = { who = THIS value = 150 } }
+				KUK = { relation = { who = THIS value = 150 } }
+				DNB = { relation = { who = THIS value = 150 } }
+				TUR = { relation = { who = THIS value = 150 } }
+				RUS = { relation = { who = THIS value = 150 } }
+			}
 		} 
 		modifier = { 
-			any_greater_power = { 
-				limit = { 
-					capital_scope = { 
-						continent = europe 
-					} 
-				} 
-				relation = { who = THIS value = 175 } 
-			}
 			factor = 0.5
+			OR = {
+				ENG = { relation = { who = THIS value = 175 } }
+				ENL = { relation = { who = THIS value = 175 } }
+				FRA = { relation = { who = THIS value = 175 } }
+				BOR = { relation = { who = THIS value = 175 } }
+				SPA = { relation = { who = THIS value = 175 } }
+				IBR = { relation = { who = THIS value = 175 } }
+				ITA = { relation = { who = THIS value = 175 } }
+				ITS = { relation = { who = THIS value = 175 } }
+				PRU = { relation = { who = THIS value = 175 } }
+				NGF = { relation = { who = THIS value = 175 } }
+				SGF = { relation = { who = THIS value = 175 } }
+				GER = { relation = { who = THIS value = 175 } }
+				GCF = { relation = { who = THIS value = 175 } }
+				AUS = { relation = { who = THIS value = 175 } }
+				AUB = { relation = { who = THIS value = 175 } }
+				KUK = { relation = { who = THIS value = 175 } }
+				DNB = { relation = { who = THIS value = 175 } }
+				TUR = { relation = { who = THIS value = 175 } }
+				RUS = { relation = { who = THIS value = 175 } }
+			}
 		} 
 		modifier = { 
-			any_greater_power = { 
-				limit = { 
-					capital_scope = { 
-						continent = europe 
-					} 
-				}
-				relation = { who = THIS value = 200 } 
-			}
 			factor = 0.25
+			OR = {
+				ENG = { relation = { who = THIS value = 200 } }
+				ENL = { relation = { who = THIS value = 200 } }
+				FRA = { relation = { who = THIS value = 200 } }
+				BOR = { relation = { who = THIS value = 200 } }
+				SPA = { relation = { who = THIS value = 200 } }
+				IBR = { relation = { who = THIS value = 200 } }
+				ITA = { relation = { who = THIS value = 200 } }
+				ITS = { relation = { who = THIS value = 200 } }
+				PRU = { relation = { who = THIS value = 200 } }
+				NGF = { relation = { who = THIS value = 200 } }
+				SGF = { relation = { who = THIS value = 200 } }
+				GER = { relation = { who = THIS value = 200 } }
+				GCF = { relation = { who = THIS value = 200 } }
+				AUS = { relation = { who = THIS value = 200 } }
+				AUB = { relation = { who = THIS value = 200 } }
+				KUK = { relation = { who = THIS value = 200 } }
+				DNB = { relation = { who = THIS value = 200 } }
+				TUR = { relation = { who = THIS value = 200 } }
+				RUS = { relation = { who = THIS value = 200 } }
+			}
 		} 
 	}  
 }
@@ -1230,16 +1436,30 @@ country_event = {
 				has_global_flag = successful_second_embassy 
 				has_global_flag = failed_second_embassy 
 				has_global_flag = third_japanese_embassy_sent 
-				any_greater_power = {
-					limit = { continent = europe } 
-					relation = { who = THIS value = -150 } 
-					war_with = THIS 
-				} 
+				ENG = { relation = { who = THIS value = -150 } }
+				ENL = { relation = { who = THIS value = -150 } }
+				FRA = { relation = { who = THIS value = -150 } }
+				BOR = { relation = { who = THIS value = -150 } }
+				SPA = { relation = { who = THIS value = -150 } }
+				IBR = { relation = { who = THIS value = -150 } }
+				ITA = { relation = { who = THIS value = -150 } }
+				ITS = { relation = { who = THIS value = -150 } }
+				PRU = { relation = { who = THIS value = -150 } }
+				NGF = { relation = { who = THIS value = -150 } }
+				SGF = { relation = { who = THIS value = -150 } }
+				GER = { relation = { who = THIS value = -150 } }
+				GCF = { relation = { who = THIS value = -150 } }
+				AUS = { relation = { who = THIS value = -150 } }
+				AUB = { relation = { who = THIS value = -150 } }
+				KUK = { relation = { who = THIS value = -150 } }
+				DNB = { relation = { who = THIS value = -150 } }
+				TUR = { relation = { who = THIS value = -150 } }
+				RUS = { relation = { who = THIS value = -150 } }
 			}  
 	} 
 	
 	option = { 
-		name="EVT91171OPTA"
+		name="EVT91173OPTA"
 		research_points = 500
 		prestige = 2
 		set_global_flag = failed_second_embassy
@@ -1248,56 +1468,96 @@ country_event = {
 		any_pop = { militancy = 0.5 } 
 		any_greater_power = { 
 			limit = { 
-				capital_scope = { 
-					continent = europe 
-				} 
-			NOT = { 
-				casus_belli = THIS 
-				war_with = THIS 
+				NOT = {
+					OR = {
+						tag = USA
+						tag = US2
+						casus_belli = THIS 
+						war_with = THIS 
+					}
 				} 
 			} 
 			relation = { who = THIS value = 30 }
 			diplomatic_influence = {
 				who = THIS 
 				value = 5 
-			}	 		
-		}
+			}	 
+		} 		
 	}
 		
 	mean_time_to_happen = { 
 		days = 100 
-		modifier = { 
-			any_greater_power = { 
-				limit = { 
-					capital_scope = { 
-						continent = europe 
-					} 
-				} 
-				relation = { who = THIS value = -50 } 
+		modifier = {
+			factor = 0.75
+			OR = {
+				ENG = { relation = { who = THIS value = -50 } }
+				ENL = { relation = { who = THIS value = -50 } }
+				FRA = { relation = { who = THIS value = -50 } }
+				BOR = { relation = { who = THIS value = -50 } }
+				SPA = { relation = { who = THIS value = -50 } }
+				IBR = { relation = { who = THIS value = -50 } }
+				ITA = { relation = { who = THIS value = -50 } }
+				ITS = { relation = { who = THIS value = -50 } }
+				PRU = { relation = { who = THIS value = -50 } }
+				NGF = { relation = { who = THIS value = -50 } }
+				SGF = { relation = { who = THIS value = -50 } }
+				GER = { relation = { who = THIS value = -50 } }
+				GCF = { relation = { who = THIS value = -50 } }
+				AUS = { relation = { who = THIS value = -50 } }
+				AUB = { relation = { who = THIS value = -50 } }
+				KUK = { relation = { who = THIS value = -50 } }
+				DNB = { relation = { who = THIS value = -50 } }
+				TUR = { relation = { who = THIS value = -50 } }
+				RUS = { relation = { who = THIS value = -50 } }
 			}
-				factor = 0.75
 		} 
 		modifier = { 
-			any_greater_power = { 
-				limit = { 
-					capital_scope = { 
-						continent = europe 
-					} 
-				}
-				relation = { who = THIS value = -75 } 
-			}
 			factor = 0.5
+			OR = {
+				ENG = { relation = { who = THIS value = -75 } }
+				ENL = { relation = { who = THIS value = -75 } }
+				FRA = { relation = { who = THIS value = -75 } }
+				BOR = { relation = { who = THIS value = -75 } }
+				SPA = { relation = { who = THIS value = -75 } }
+				IBR = { relation = { who = THIS value = -75 } }
+				ITA = { relation = { who = THIS value = -75 } }
+				ITS = { relation = { who = THIS value = -75 } }
+				PRU = { relation = { who = THIS value = -75 } }
+				NGF = { relation = { who = THIS value = -75 } }
+				SGF = { relation = { who = THIS value = -75 } }
+				GER = { relation = { who = THIS value = -75 } }
+				GCF = { relation = { who = THIS value = -75 } }
+				AUS = { relation = { who = THIS value = -75 } }
+				AUB = { relation = { who = THIS value = -75 } }
+				KUK = { relation = { who = THIS value = -75 } }
+				DNB = { relation = { who = THIS value = -75 } }
+				TUR = { relation = { who = THIS value = -75 } }
+				RUS = { relation = { who = THIS value = -75 } }
+			}
 		} 
 		modifier = { 
-			any_greater_power = { 
-				limit = { 
-					capital_scope = { 
-						continent = europe 
-					} 
-				}
-				relation = { who = THIS value = -100 } 
-			}
 			factor = 0.25
+			OR = {
+				ENG = { relation = { who = THIS value = -100 } }
+				ENL = { relation = { who = THIS value = -100 } }
+				FRA = { relation = { who = THIS value = -100 } }
+				BOR = { relation = { who = THIS value = -100 } }
+				SPA = { relation = { who = THIS value = -100 } }
+				IBR = { relation = { who = THIS value = -100 } }
+				ITA = { relation = { who = THIS value = -100 } }
+				ITS = { relation = { who = THIS value = -100 } }
+				PRU = { relation = { who = THIS value = -100 } }
+				NGF = { relation = { who = THIS value = -100 } }
+				SGF = { relation = { who = THIS value = -100 } }
+				GER = { relation = { who = THIS value = -100 } }
+				GCF = { relation = { who = THIS value = -100 } }
+				AUS = { relation = { who = THIS value = -100 } }
+				AUB = { relation = { who = THIS value = -100 } }
+				KUK = { relation = { who = THIS value = -100 } }
+				DNB = { relation = { who = THIS value = -100 } }
+				TUR = { relation = { who = THIS value = -100 } }
+				RUS = { relation = { who = THIS value = -100 } }
+			}
 		} 
 	}	
 } 
@@ -1320,10 +1580,10 @@ country_event = {
 		NOT = { 
 			has_global_flag = successful_third_embassy
 			has_global_flag = failed_third_embassy
-			TKG = { 
-				war_with = USA 
-				relation = { who = USA value = -150 } 
-			} 
+			war_with = USA 
+			relation = { who = USA value = -150 } 
+			war_with = US2 
+			relation = { who = US2 value = -150 }  
 		} 
 	}
 	
@@ -1344,31 +1604,31 @@ country_event = {
 	mean_time_to_happen = { 
 		days = 100 
 		modifier = { 
+			factor = 0.75
 			USA = { 
 				relation = { who = THIS value = 150 } 
 			}
 			US2 = { 
 				relation = { who = THIS value = 150 } 
 			}
-				factor = 0.75
 		} 
-		modifier = { 
-			USA = { 
-				relation = { who = THIS value = 175 } 
-			}
-			US2 = { 
-				relation = { who = THIS value = 175 } 
-			}
+		modifier = {
 			factor = 0.5
+			USA = { 
+				relation = { who = THIS value = 175 } 
+			}
+			US2 = { 
+				relation = { who = THIS value = 175 } 
+			}
 		} 
 		modifier = { 
+			factor = 0.25
 			USA = {
 				relation = { who = THIS value = 200 } 
 			}
 			US2 = {
 				relation = { who = THIS value = 200 } 
 			}
-			factor = 0.25
 		} 
 	}
 }
@@ -1393,6 +1653,8 @@ country_event = {
 			has_global_flag = failed_third_embassy
 			war_with = USA 
 			relation = { who = USA value = -150 } 
+			war_with = US2 
+			relation = { who = US2 value = -150 }  
 		} 
 	}
 	
@@ -1448,18 +1710,28 @@ country_event = {
 	trigger = { 
 		tag = TKG 
 		has_country_modifier = sending_embassy 
-		has_global_flag = first_japanese_embassy_sent   
-		OR = {
-			any_greater_power = { 
-				limit = { 
-					capital_scope = { 
-						continent = europe 
-					} 
-				}
-				war_with = THIS 
-				relation = { who = THIS value = -150 }
+		has_global_flag = first_japanese_embassy_sent  
+			OR = { 
+				ENG = { relation = { who = THIS value = -150 } }
+				ENL = { relation = { who = THIS value = -150 } }
+				FRA = { relation = { who = THIS value = -150 } }
+				BOR = { relation = { who = THIS value = -150 } }
+				SPA = { relation = { who = THIS value = -150 } }
+				IBR = { relation = { who = THIS value = -150 } }
+				ITA = { relation = { who = THIS value = -150 } }
+				ITS = { relation = { who = THIS value = -150 } }
+				PRU = { relation = { who = THIS value = -150 } }
+				NGF = { relation = { who = THIS value = -150 } }
+				SGF = { relation = { who = THIS value = -150 } }
+				GER = { relation = { who = THIS value = -150 } }
+				GCF = { relation = { who = THIS value = -150 } }
+				AUS = { relation = { who = THIS value = -150 } }
+				AUB = { relation = { who = THIS value = -150 } }
+				KUK = { relation = { who = THIS value = -150 } }
+				DNB = { relation = { who = THIS value = -150 } }
+				TUR = { relation = { who = THIS value = -150 } }
+				RUS = { relation = { who = THIS value = -150 } }
 			}
-		}
 		NOT = { has_global_flag = successful_first_embassy } 
 		NOT = { has_global_flag = failed_first_embassy }
 	}	
@@ -1484,18 +1756,28 @@ country_event = {
 	trigger = { 
 		tag = TKG 
 		has_country_modifier = sending_embassy
-		has_global_flag = second_japanese_embassy_sent 		
-		OR = {
-			any_greater_power = { 
-				limit = { 
-					capital_scope = { 
-						continent = europe 
-					} 
-				} 
-				war_with = THIS 
-				relation = { who = THIS value = -150 }
+		has_global_flag = second_japanese_embassy_sent 	
+			OR = { 
+				ENG = { relation = { who = THIS value = -150 } }
+				ENL = { relation = { who = THIS value = -150 } }
+				FRA = { relation = { who = THIS value = -150 } }
+				BOR = { relation = { who = THIS value = -150 } }
+				SPA = { relation = { who = THIS value = -150 } }
+				IBR = { relation = { who = THIS value = -150 } }
+				ITA = { relation = { who = THIS value = -150 } }
+				ITS = { relation = { who = THIS value = -150 } }
+				PRU = { relation = { who = THIS value = -150 } }
+				NGF = { relation = { who = THIS value = -150 } }
+				SGF = { relation = { who = THIS value = -150 } }
+				GER = { relation = { who = THIS value = -150 } }
+				GCF = { relation = { who = THIS value = -150 } }
+				AUS = { relation = { who = THIS value = -150 } }
+				AUB = { relation = { who = THIS value = -150 } }
+				KUK = { relation = { who = THIS value = -150 } }
+				DNB = { relation = { who = THIS value = -150 } }
+				TUR = { relation = { who = THIS value = -150 } }
+				RUS = { relation = { who = THIS value = -150 } }
 			}
-		}
 		NOT = { has_global_flag = successful_second_embassy } 
 		NOT = { has_global_flag = failed_second_embassy }	
 	}
@@ -1523,11 +1805,9 @@ country_event = {
 			USA = {
 				relation = { who = THIS value = -150 } 
 			} 
-			USA = { war_with = THIS }
 			US2 = { 
 				relation = { who = THIS value = -150 } 
 			}
-			US2 = { war_with = THIS }	
 		}
 		NOT = { has_global_flag = successful_third_embassy } 
 		NOT = { has_global_flag = failed_third_embassy }			
@@ -1989,7 +2269,6 @@ country_event = {
         tag = TKG
         has_country_modifier = ansei_purge
         OR = {
-            year = 1862
             average_militancy = 2
             CHO = { average_militancy = 4 }
             SAT = { average_militancy = 4 }
@@ -2226,6 +2505,7 @@ country_event = {
         NOT = { has_country_flag = consulted_tozama }
         NOT = { has_global_flag = boshin_war }
         NOT = { has_global_flag = boshin_war_has_happened }
+		NOT = { has_country_flag = peaceful_transition_to_japan } 
     }
 
     mean_time_to_happen = {
@@ -2328,7 +2608,8 @@ country_event = {
 		TKG = { civilized = yes } 
 		average_consciousness = 1.5 
 		average_militancy = 1.5 
-		year = 1860 
+		has_global_flag = order_to_expel_barbarians
+		has_country_flag = sonno_joi 
 		NOT = { has_global_flag = boshin_war } 
 		NOT = { has_global_flag = boshin_war_has_happened }
 		NOT = { tag = RYU } 
@@ -2758,6 +3039,10 @@ country_event = {
         JAP = {
             political_reform = regionalism
             government = absolute_empire
+			add_country_modifier = { 
+				name = resistance_to_new_regime
+				duration = 1000
+			}
         }
         any_country = {
             limit = {
@@ -3076,6 +3361,10 @@ country_event = {
             name = global_baby_boom_small
             duration = 5475
         }
+		add_country_modifier = { 
+			name = resistance_to_new_regime
+			duration = 1000
+		}
         random_country = {
             limit = {
                 has_country_flag = imperial_war_leader
@@ -3388,7 +3677,7 @@ country_event = {
 		prestige = -2 
 		FROM = { 
 			country_event = 91186 
-			clr_country_flag = harris_treaty_pending
+			clr_global_flag = harris_treaty_pending
 		} 
 		relation = { who = FROM value = 20 } 
 		1651 = { 
@@ -3425,7 +3714,7 @@ country_event = {
 		relation = { who = FROM value = -100 } 
 		FROM = { 
 			country_event = 91187 
-			clr_country_flag = harris_treaty_pending 
+			clr_global_flag = harris_treaty_pending 
 		} 
 		any_pop = { consciousness = -0.1 }
 		set_global_flag = harris_treaty_rejected 
@@ -3460,12 +3749,6 @@ country_event = {
 	
 	option = { 
 		name = "EVT91187OPTA" 
-		diplomatic_influence = { who = FROM value = -50 }  
-		ai_chance = { factor = 10 } 
-	} 
-	
-	option = { 
-		name = "EVT91187OPTB" 
 		 war = {
             target = FROM
             attacker_goal = {
@@ -3474,7 +3757,13 @@ country_event = {
 		}
 		badboy = 2
 		ai_chance = { factor = 90 } 	
-	}	
+	}
+
+	option = { 
+		name = "EVT91187OPTB" 
+		diplomatic_influence = { who = FROM value = -50 }  
+		ai_chance = { factor = 10 } 
+	} 	
 } 
 
 country_event = {
@@ -3603,10 +3892,7 @@ country_event = {
 
     trigger = {
         war = no
-        OR = {
-            tag = TKG
-            tag = JAP
-        }
+        tag = JAP
         OR = {
             government = absolute_monarchy
             government = prussian_constitutionalism
@@ -3728,10 +4014,7 @@ country_event = {
     picture = "satsuma_rebellion"
 
     trigger = {
-        OR = {
-            tag = JAP
-            tag = TKG
-        }
+        tag = JAP
         war = no
         has_country_flag = satsuma_rebellion_happened
         SAT = { exists = no }
@@ -3877,16 +4160,18 @@ country_event = {
     picture = "asian_administration"
 
     trigger = {
-        OR = {
-            tag = JAP
-            tag = TKG
-        }
+		tag = JAP
         war = no
         has_country_modifier = line_of_advantage
         OR = {
-            war_policy = pacifism
-            war_policy = anti_military
+            ruling_party_ideology = liberal
+			ruling_party_ideology = socialist
         }
+		OR = { 
+			anti_military = 10 
+			pacifism = 10 
+		} 
+		plurality = 20 
     }
 
     mean_time_to_happen = {
@@ -3924,16 +4209,17 @@ country_event = {
     picture = "asian_administration"
 
     trigger = {
-        OR = {
-            tag = JAP
-            tag = TKG
-        }
+        tag = JAP
         war = no
         has_country_modifier = no_line_of_advantage
-        OR = {
-            war_policy = jingoism
-            war_policy = pro_military
-        }
+        OR = { 
+			ruling_party_ideology = conservative
+			ruling_party_ideology = reactionary
+			ruling_party_ideology = fascist 
+			ruling_party_ideology = communist 
+		} 
+		jingoism = 10
+		plurality = 20 
     }
 
     mean_time_to_happen = {
@@ -4476,7 +4762,7 @@ country_event = {
             }
         }
         ai_chance = {
-            factor = 75
+            factor = 10
             modifier = {
                 factor = 1.5
                 is_secondary_power = yes
@@ -4524,7 +4810,7 @@ country_event = {
             }
         }
         ai_chance = {
-            factor = 25
+            factor = 90
             modifier = {
                 factor = 0
                 FROM = { brigades_compare = 3 }
@@ -5169,3 +5455,148 @@ country_event = {
         KAG = { all_core = { add_core = JAP } }
     }
 }
+
+country_event = { 
+	id = 899094
+	title = "EVTNAME899094" 
+	desc = "EVTDESC899094" 
+	picture = "life_in_shogunate_japan" 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = "EVT899094OPTA" 
+		add_country_modifier = { 
+				name = dentoudou
+				duration = -1 
+		}
+		move_issue_percentage = {
+			from = free_trade 
+			to = protectionism 
+			value = 0.7
+		}
+		any_pop = { 
+			ideology = { 
+				value = conservative 
+				factor = 0.5 
+			} 
+			ideology = { 
+				value = reactionary 
+				factor = 0.5 
+			}
+		} 	
+	} 
+}
+
+country_event = { 
+	id = 7749112
+	title = "EVTNAME7749112"
+	desc = "EVTDESC7749112"
+	picture = "sonno_joi"
+	
+	trigger = { 
+		civilized = yes
+		OR = { 
+			tag = TKG 
+			tag = JAP 
+		} 
+		OR = { 
+			AND = { 
+				tag = TKG 
+				has_country_flag = daimyos_united 
+			} 
+			AND = {
+				tag = JAP 
+				has_country_flag = boshin_war_has_happened
+			} 
+			AND = {
+				tag = TKG 
+				has_country_flag = boshin_war_has_happened
+			}
+		}
+		has_country_modifier = resistance_to_new_regime
+		NOT = { has_country_flag = new_regime_accepted } 
+	}
+	
+	option = { 
+		name = "EVT7749112OPTA"
+		any_pop = { 
+		  consciousness = 0.1
+		  militancy = 0.1
+          ideology = {
+                value = reactionary
+                factor = 0.2
+            }
+        }
+		prestige = -2 
+	}
+	
+	mean_time_to_happen = { months = 4 } 	
+}
+
+country_event = { 
+	id = 7749113
+	title = "EVTNAME7749113"
+	desc = "EVTDESC7749113"
+	picture = "meiji_coronation"
+	major = yes 
+	
+	trigger = { 
+		civilized = yes
+			OR = { 
+				tag = TKG 
+				tag = JAP 
+			} 
+			OR = { 
+				AND = { 
+					tag = TKG 
+					has_country_flag = daimyos_united 
+				} 
+				AND = {
+					tag = JAP 
+					has_country_flag = boshin_war_has_happened
+				} 
+				AND = {
+					tag = TKG 
+					has_country_flag = boshin_war_has_happened
+				} 
+			}
+		NOT = { has_country_flag = new_regime_accepted } 	
+		NOT = { has_country_modifier = resistance_to_new_regime } 
+	}
+
+	option = { 
+		name = "EVT7749113OPTA"
+		set_country_flag = new_regime_accepted 
+		prestige = 4 
+		any_pop = { 
+			militancy = -2 
+			consciousness = -2
+		}
+	}
+
+	mean_time_to_happen = { days = 1 } 
+}  
+
+country_event = { 
+	id = 666605 #China receives word of Manchurian invasion 
+	title = "EVTNAME666605"
+	desc = "EVTDESC666605"
+	picture = "japanese_invasion_of_manchuria"
+
+	is_triggered_only = yes 
+	
+	option = { 
+		name = "We shall defend Manchuria, no matter the cost."
+		set_country_flag = being_invaded_for_manchuria
+		FROM = { 
+			war = { 
+				target = THIS 
+				attacker_goal = { casus_belli = cut_down_to_size_no_infamy } 
+				defender_goal = { casus_belli = status_quo }
+			}
+		}
+	}
+}
+
+

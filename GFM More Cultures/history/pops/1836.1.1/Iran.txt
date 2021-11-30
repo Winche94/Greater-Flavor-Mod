@@ -972,7 +972,7 @@
 	farmers = {
 		culture = gilaki
 		religion = shiite
-		size = 10000
+		size = 12000
 	}
 	
 	farmers = {
@@ -1044,7 +1044,7 @@
 	farmers = {
 		culture = tati
 		religion = sunni
-		size = 17500
+		size = 15500
 	}
 
 	slaves = {
@@ -4753,13 +4753,19 @@
 	farmers = {
 		culture = baluchi
 		religion = sunni
-		size = 5075
+		size = 4075
 	}
+	
+	farmers = {
+        culture = dehwar
+        religion = sunni
+        size = 2500
+    }
 	
 	farmers = {
 		culture = brahui
 		religion = sunni
-		size = 9075
+		size = 7575
 	}
 	
 	clergymen = {

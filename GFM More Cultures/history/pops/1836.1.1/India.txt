@@ -156,19 +156,19 @@
     }
 	
 	clergymen = {
-        culture = pamiri
+        culture = wakhi
         religion = shiite
         size = 50
     }
 
     soldiers = {
-        culture = pamiri
+        culture = wakhi
         religion = shiite
         size = 500
     }
 
     farmers = {
-        culture = pamiri
+        culture = wakhi
         religion = shiite
         size = 5500
     }
@@ -546,13 +546,19 @@
     farmers = {
         culture = baluchi
         religion = sunni
-        size = 12925
+        size = 10925
+    }
+	
+	farmers = {
+        culture = dehwar
+        religion = sunni
+        size = 4000
     }
 	
 	farmers = {
         culture = brahui
         religion = sunni
-        size = 13000
+        size = 11000
     }
 	
 	aristocrats = {
@@ -1011,31 +1017,31 @@
     }
 	
 	aristocrats = {
-        culture = pamiri
+        culture = wakhi
         religion = shiite
         size = 150
     }
 
     clergymen = {
-        culture = pamiri
+        culture = wakhi
         religion = shiite
         size = 75
     }
 
     artisans = {
-        culture = pamiri
+        culture = wakhi
         religion = shiite
         size = 20
     }
 
     soldiers = {
-        culture = pamiri
+        culture = wakhi
         religion = shiite
         size = 400
     }
 
     farmers = {
-        culture = pamiri
+        culture = wakhi
         religion = shiite
         size = 1725
     }

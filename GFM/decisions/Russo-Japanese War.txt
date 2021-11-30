@@ -1,0 +1,119 @@
+political_decisions = {
+	russo_japanese_war = { 
+		picture = attack_on_port_arthur
+		potential = { 
+			civilized = yes
+			OR = { 
+				tag = TKG
+				tag = JAP 
+			} 
+			has_country_modifier = fukoku_kyohei
+			has_country_flag = otsu_incident
+			RUS = {  
+				is_greater_power = yes
+				owns = 1082
+				owns = 1481 
+			} 
+			OR = { 
+				QNG = { 
+					owns = 1479
+					owns = 1480
+					owns = 1552
+					owns = 1553
+					owns = 1554
+					owns = 1555
+					owns = 3440
+					owns = 1533 
+				}
+				TPG = { 
+					owns = 1479
+					owns = 1480
+					owns = 1552
+					owns = 1553
+					owns = 1554
+					owns = 1555
+					owns = 3440
+					owns = 1533
+				} 
+			}
+			NOT = { has_country_flag = only_one_war_with_russia }
+		} 
+		allow = { 
+			year = 1904
+			war = no 
+			OR = {
+				ai = yes
+				NOT = { relation = { who = RUS value = 100 } alliance_with = RUS }
+			}
+			OR = { 
+				has_country_flag = negotiate_ganghwa_treaty
+				KOR = { have_core_in = THIS }
+				KOR = { vassal_of = THIS } 
+				KOR = { in_sphere = THIS } 
+				diplomatic_influence = { who = KOR value = 50 } 
+			} 
+		}
+		effect = { 
+			RUS = { country_event = 784518 } 
+			add_country_modifier = { 
+				name = aggression_against_russia
+				duration = 580 	
+			} 
+			set_global_flag = russo_japanese_war
+			set_country_flag = only_one_war_with_russia
+		} 
+			
+		ai_will_do = { factor = 1 } 
+	}
+	
+	russo_japanese_war_japanese_treaty = { 
+		picture = korea_and_manchuria 
+		potential = { 
+			OR = { 
+				tag = TKG 
+				tag = JAP 
+			} 
+			RUS = { 
+				is_disarmed = yes 
+				truce_with = THIS 
+			} 
+			has_global_flag = russo_japanese_war	
+			NOT = { has_country_flag = other_treaties_with_russia } 
+		}
+		allow = { war = no } 
+		effect = { 
+			country_event = 784527
+			set_country_flag = other_treaties_with_russia 
+			clr_global_flag = russo_japanese_war
+		} 
+		ai_will_do = { factor = 1 } 
+
+	}
+	
+	russo_japanese_war_russian_treaty = { 
+		picture = korea_and_manchuria 
+		
+		potential = { 
+			tag = RUS 
+			has_global_flag = russo_japanese_war		
+			OR = { 
+				TKG = { 
+					is_disarmed = yes 
+					truce_with = THIS 
+				} 
+				JAP = { 
+					is_disarmed = yes 
+					truce_with = THIS 
+				} 	
+			} 
+			NOT = { has_country_flag = other_treaties_with_japan } 
+		}
+		allow = { war = no } 
+		effect = { 
+			country_event = 784531
+			set_country_flag = other_treaties_with_japan 
+			clr_global_flag = russo_japanese_war
+		} 
+		ai_will_do = { factor = 1 } 
+	}
+}
