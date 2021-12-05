@@ -1065,3 +1065,10 @@ SCA = {
     color2= { 121 181 249 }
     color3= { 254 255 251 }
 }
+
+# Federation of Rhodesia-Nyasaland
+RHN = {
+	color1= { 198 191 255 }
+    color2= { 121 181 249 }
+    color3= { 254 255 251 }
+}
