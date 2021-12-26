@@ -74687,36 +74687,31 @@
 # Ouargla
 1711 = {
     text_position = {
-        x = 2882.000000
-        y = 1265.099976
+        x = 2908.000000
+        y = 1242.099976
     }
 
     text_rotation = 0.1
-    text_scale = 6.599999
-    unit = {
-        x = 2901.0
-        y = 1290.65
-    }
-
+    text_scale = 8.599999
     factory = {
-        x = 2880.000000
+        x = 2920.000000
         y = 1289.000000
     }
 
     building_construction = {
-        x = 2871.000000
-        y = 1280.000000
+        x = 2944.000000
+        y = 1230.000000
     }
 
     military_construction = {
-        x = 2890.000000
-        y = 1285.000000
+        x = 2896.000000
+        y = 1216.000000
     }
 
     building_position = {
         fort = {
-            x = 2871.000000
-            y = 1286.000000
+            x = 2847.000000
+            y = 1263.000000
         }
 
     }
@@ -74726,15 +74721,14 @@
 # Tuggurt
 1712 = {
     text_position = {
-        x = 2891.500098
-        y = 1309.500000
+        x = 2912.500098
+        y = 1331.500000
     }
 
-    text_rotation = 1
     text_scale = 2.999999
     unit = {
-        x = 2892.000000
-        y = 1317.000000
+        x = 2897.000000
+        y = 1320.000000
     }
 
     factory = {
@@ -74743,8 +74737,8 @@
     }
 
     building_construction = {
-        x = 2897.000000
-        y = 1315.000000
+        x = 2912.000000
+        y = 1319.000000
     }
 
     military_construction = {
@@ -74769,16 +74763,15 @@
         y = 1315.699951
     }
 
-    text_rotation = 0.3
-    text_scale = 6.099999
+    text_scale = 6.5
     unit = {
-        x = 2851.000000
-        y = 1332.000000
+        x = 2854.000000
+        y = 1324.000000
     }
 
     factory = {
-        x = 2874.000000
-        y = 1340.000000
+        x = 2876.000000
+        y = 1320.000000
     }
 
     building_construction = {
@@ -74787,8 +74780,8 @@
     }
 
     military_construction = {
-        x = 2842.000000
-        y = 1327.000000
+        x = 2840.000000
+        y = 1295.000000
     }
 
     building_position = {
@@ -75472,17 +75465,22 @@
 
 # Tozeur
 1729 = {
+    text_position = {
+        x = 2957.000000
+        y = 1296.000000
+    }
+
+    text_scale = 3.799999
     unit = {
         x = 2958.000000
         y = 1302.000000
     }
 
-    text_position = {
-        x = 2959.000000
-        y = 1295.000000
+    factory = {
+        x = 2945.000000
+        y = 1335.000000
     }
 
-    text_scale = 3.799999
     building_construction = {
         x = 2946.000000
         y = 1307.000000
@@ -75491,11 +75489,6 @@
     military_construction = {
         x = 2959.000000
         y = 1287.000000
-    }
-
-    factory = {
-        x = 2945.000000
-        y = 1318.000000
     }
 
     building_position = {
@@ -75528,8 +75521,8 @@
     }
 
     building_construction = {
-        x = 2961.180000
-        y = 1321.540000
+        x = 2953.180000
+        y = 1320.540000
     }
 
     military_construction = {
