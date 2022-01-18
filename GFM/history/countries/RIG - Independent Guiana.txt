@@ -1,8 +1,6 @@
 capital = 2415
 primary_culture = kreol
 culture = afro_caribbean
-culture = afro_french
-culture = amazonian
 religion = protestant
 government = democracy
 plurality = 0.0
